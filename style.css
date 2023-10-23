@@ -1,0 +1,314 @@
+Reset some default styles body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  /* background-color: #f9f9f9; */
+
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header p {
+  font-size: 18px;
+  color: #666;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3f68da8a;
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* 
+.project {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.project p {
+  font-size: 16px;
+  color: #666;
+} */ /* Add this CSS to your styles.css file */
+
+/* Define a grid layout for the projects */
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Adjust the column width as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+/* 
+/* Style each individual project within the grid */
+.project {
+  background-color: #fff;
+  box-shadow: 0 10px 300px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  border-radius: 10%;
+  margin-left: 5%;
+  transition: transform 0.3s;
+}
+.project:hover {
+  transform: scale(1.05); /* Increase the size of the project on hover */
+}
+/* Optional: Add styling for project titles and descriptions */
+.project h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px; /* Improve spacing between the title and content */
+}
+
+.project p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6; /* Improved readability with line height */
+  /* width: 100%; (not necessary, since it's a block element) */
+  padding: 0 20px;
+  margin-top: 10px; /* Adjust the top margin for better alignment */
+  margin-bottom: -10px;
+}
+
+/* Add this CSS to your styles.css file */
+
+footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons a img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+}
+
+.social-icons a:hover {
+  color: #ffffff; /* Change the color on hover */
+}
+
+p {
+  font-size: 14px;
+}
+/* Style for the Summary section */
+#summary {
+  color: #000000; /* White text color */
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#summary h2 {
+  font-size: 36px; /* Larger font size for the section title */
+  color: #000000df; /* Accent color for the title */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+#summary p {
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability with line height */
+  width: 100%;
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* Add padding to the top of the section */
+#summary::before {
+  content: "";
+  display: block;
+  height: 30px;
+}
+/* Style for the Skills section */
+#skills {
+  background-color: #f0f0f0; /* Background color */
+  color: #333; /* Text color */
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills h2 {
+  font-size: 36px; /* Larger font size for the section title */
+  color: #000000; /* Accent color for the title */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+#skills p {
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability with line height */
+  width: 100%;
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability with line height */
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* Add padding to the top of the section */
+#skills::before {
+  content: "";
+  display: block;
+  height: 30px;
+}
+/* Style for the Skills section */
+#IndustrialSkills {
+  background-color: #f0f0f0; /* Background color */
+  color: #333; /* Text color */
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#IndustrialSkills h2 {
+  font-size: 36px; /* Larger font size for the section title */
+  color: #000000; /* Accent color for the title */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+#IndustrialSkills li {
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability with line height */
+  width: 100%;
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* Add padding to the top of the section */
+#IndustrialSkills::before {
+  content: "";
+  display: block;
+  height: 30px;
+}
+
+#qualifications h2 {
+  font-size: 36px; /* Larger font size for the section title */
+  color: #000000; /* Accent color for the title */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+#qualifications span {
+  font-size: 18px;
+  line-height: 1.6; /* Improved readability with line height */
+  width: 1000%;
+  text-align: left;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.projecttitle {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 28px;
+  font-size: 36px; /* Larger font size for the section title */
+  color: #000000; /* Accent color for the title */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 36px; /* Larger font size for the section title */
+  color: #000000; /* Accent color for the title */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 786px) {
+  #summary p,
+  #skills p,
+  #IndustrialSkills li,
+  #qualifications span {
+    font-size: 16px;
+  }
+}
