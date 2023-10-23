@@ -311,4 +311,12 @@ p {
   #qualifications span {
     font-size: 16px;
   }
+  nav {
+    display: none; /* Hide the navigation bar on screens with a width of 768px or less */
+  }
+  body {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
 }
